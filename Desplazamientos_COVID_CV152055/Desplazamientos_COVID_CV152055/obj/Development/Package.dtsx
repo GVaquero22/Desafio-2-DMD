@@ -1,0 +1,3069 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/17/2022 9:22:47 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-BUMRL9S"
+  DTS:CreatorName="DESKTOP-BUMRL9S\rolan"
+  DTS:DTSID="{382A7FB2-2AA3-481B-A2A3-2715E4914049}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="17418"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{5B6D5B99-5D88-4709-950D-DAA162C13BD9}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F675DB71-8C3F-48F5-B8D6-8312DB843004}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="21514"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\rolan\Desktop\UDB\2022\DMD941-G01T\Desafio 2\2020_CR_Region_Mobility_Report.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_region_code"
+              DTS:DTSID="{5FE4B62B-33A4-4DAF-9BB6-A7A94DBF260C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_region"
+              DTS:DTSID="{940EAE73-909A-465A-8E37-9608939E8098}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="sub_region_1"
+              DTS:DTSID="{A68D18F4-5A98-4D5F-9922-A5C4B6925DAF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="sub_region_2"
+              DTS:DTSID="{786E2593-1665-4402-8E4E-34DB821D9C17}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="metro_area"
+              DTS:DTSID="{48617154-B947-4780-99FD-EA5379F41BF1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="iso_3166_2_code"
+              DTS:DTSID="{4DF01864-DAF5-4C9D-9FC2-C1AA09CFC6FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="census_fips_code"
+              DTS:DTSID="{BDF1361C-B253-47AB-AC54-7582A86E6D3E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="place_id"
+              DTS:DTSID="{A03F14E1-D8BD-4488-81C4-0318B5A34E37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{0D4873ED-C600-419B-8580-703DD8533B17}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="retail_and_recreation_percent_change_from_baseline"
+              DTS:DTSID="{140D12EB-B6F3-4A53-9048-C9A83724E550}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="grocery_and_pharmacy_percent_change_from_baseline"
+              DTS:DTSID="{749DF635-32F1-46F2-856F-90B3A5575956}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="parks_percent_change_from_baseline"
+              DTS:DTSID="{F9AC1964-F30A-4713-B1EB-668F16361AC5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="transit_stations_percent_change_from_baseline"
+              DTS:DTSID="{5AD9BC24-0CF3-4AF1-B557-D33778A0A596}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="workplaces_percent_change_from_baseline"
+              DTS:DTSID="{5400F6C4-12E0-4710-99CD-4D4B7B9D1573}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="residential_percent_change_from_baseline"
+              DTS:DTSID="{ADAEBF86-1DA6-4ECA-BD37-827ED65D4DAE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E1EC1B00-167A-4D30-A38E-8A541BFC4B43}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="17418"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\rolan\Desktop\UDB\2022\DMD941-G01T\Desafio 2\2020_CR_Region_Mobility_Report.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_region_code"
+              DTS:DTSID="{3BA7813B-3412-4DD3-AA78-2CFC71584BE7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_region"
+              DTS:DTSID="{2FA72C23-7B35-4D2D-A67F-EF7CFE645558}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="sub_region_1"
+              DTS:DTSID="{D227BC96-B448-4688-A980-CBA0BB6C13E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="sub_region_2"
+              DTS:DTSID="{3428DC8B-3CE0-45A5-A34F-83F96325A6AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="metro_area"
+              DTS:DTSID="{B42A0E57-BFF3-4E39-AB5A-65A52E857620}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="iso_3166_2_code"
+              DTS:DTSID="{228C1838-12F1-4061-8230-86B93A42C9B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="census_fips_code"
+              DTS:DTSID="{AD8457DD-E708-4C5C-AB87-A4F9AC6D4BD3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="place_id"
+              DTS:DTSID="{AC2AF6D8-095F-4FC4-B5D0-826540F6E059}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{EFCE5C0B-CA15-449C-86A9-17536E1BCF54}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="retail_and_recreation_percent_change_from_baseline"
+              DTS:DTSID="{2E68D04F-A93B-4C9B-ACF0-8537D440C91B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="grocery_and_pharmacy_percent_change_from_baseline"
+              DTS:DTSID="{77A3E8EB-0CC7-4E16-AA95-A40AA3376C2E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="parks_percent_change_from_baseline"
+              DTS:DTSID="{95843713-475D-40E2-92F6-A3C434A23E5D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="transit_stations_percent_change_from_baseline"
+              DTS:DTSID="{0C42B636-D09C-4461-8F1B-FB49EAB7ABEB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="workplaces_percent_change_from_baseline"
+              DTS:DTSID="{49604573-D7B4-4193-8002-F4ECC309EF3F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="residential_percent_change_from_baseline"
+              DTS:DTSID="{11B8C026-1423-47FA-AF3D-9B89F06EC0CF}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{FD0EB444-8300-4E51-8027-444DE32D3987}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="17418"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\rolan\Desktop\UDB\2022\DMD941-G01T\Desafio 2\2022_HN_Region_Mobility_Report.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_region_code"
+              DTS:DTSID="{CF02B312-A144-4334-834E-2E0AB2943472}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_region"
+              DTS:DTSID="{B9E8A469-0197-4A2F-8E7A-19F90D1D1582}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="sub_region_1"
+              DTS:DTSID="{A75D3573-CD8F-41D1-B8CC-9AE4A6D254B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="sub_region_2"
+              DTS:DTSID="{8609D4A2-9DE1-4E5B-B20A-6D071839B088}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="metro_area"
+              DTS:DTSID="{77476F6B-0BF9-4EC9-AB87-D1772FB25C24}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="iso_3166_2_code"
+              DTS:DTSID="{868DE1F0-89AC-4CCF-B571-AFD08872221D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="census_fips_code"
+              DTS:DTSID="{570D7630-0B9D-4AB6-8228-66FD5EBCD320}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="place_id"
+              DTS:DTSID="{645E22B4-9466-422B-8522-BBED49F971F2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{211251C3-6AF7-4658-BFF2-EE8D43896787}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="retail_and_recreation_percent_change_from_baseline"
+              DTS:DTSID="{C6515B1C-DDBB-4C63-A513-7027FC222E83}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="grocery_and_pharmacy_percent_change_from_baseline"
+              DTS:DTSID="{A461B655-BDC8-4889-90B8-98BA3919FDC9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="parks_percent_change_from_baseline"
+              DTS:DTSID="{F0BE752B-45B8-4749-B5F1-982E4574750A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="transit_stations_percent_change_from_baseline"
+              DTS:DTSID="{2FE68D39-38D9-475A-A4CD-F83F0C7858B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="workplaces_percent_change_from_baseline"
+              DTS:DTSID="{7952C55C-5B0B-491B-BF85-375F09A7D338}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="residential_percent_change_from_baseline"
+              DTS:DTSID="{9DF43501-68F0-4C2B-9AA1-8DFD91428E91}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E549E0AE-5123-4728-9781-1BFD669B7020}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="17418"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\rolan\Desktop\UDB\2022\DMD941-G01T\Desafio 2\2020_SV_Region_Mobility_Report.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_region_code"
+              DTS:DTSID="{034A1CC4-5F7F-4A57-B810-4D440028B4DF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_region"
+              DTS:DTSID="{12088A1B-38AE-4A67-9073-CB32A145258F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="sub_region_1"
+              DTS:DTSID="{2DB40607-784A-40B7-9F0C-4EAC9AAD47CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="sub_region_2"
+              DTS:DTSID="{2429FBF9-130B-472E-9294-A5AA96F4946B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="metro_area"
+              DTS:DTSID="{5C1CD5E3-B358-44EB-A366-A5313A9E090B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="iso_3166_2_code"
+              DTS:DTSID="{8DE0BE0E-16C6-4645-8F70-769174E7ACBF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="census_fips_code"
+              DTS:DTSID="{01EC55F9-4341-4013-BB3B-43C594FF7E80}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="place_id"
+              DTS:DTSID="{F50F095A-22FA-4D6C-9D62-2182F10E0290}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{A04D1D79-0378-4195-8AB9-19E839BD5453}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="retail_and_recreation_percent_change_from_baseline"
+              DTS:DTSID="{F2939615-D563-4E47-AB46-A1F0F18F39EA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="grocery_and_pharmacy_percent_change_from_baseline"
+              DTS:DTSID="{762F609D-93AD-402C-86D5-36BC66FEF894}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="parks_percent_change_from_baseline"
+              DTS:DTSID="{C692E42F-4838-48E1-93D4-B39C89FE26BB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="transit_stations_percent_change_from_baseline"
+              DTS:DTSID="{2866AC7F-F595-4E7C-9886-F799D8A22E85}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="workplaces_percent_change_from_baseline"
+              DTS:DTSID="{19F88491-FE4F-468F-BDDE-60CACA8D5285}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="residential_percent_change_from_baseline"
+              DTS:DTSID="{858D04B1-2BE2-454A-B183-42E3015646C4}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-BUMRL9S.COVID_COSTA_RICA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{72352BF6-1CE6-4727-821B-844652E74C35}"
+      DTS:ObjectName="DESKTOP-BUMRL9S.COVID_COSTA_RICA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-BUMRL9S;Initial Catalog=COVID_COSTA_RICA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-BUMRL9S.COVID_DATA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CADFE3CD-06A8-4592-806F-9B2F658E634E}"
+      DTS:ObjectName="DESKTOP-BUMRL9S.COVID_DATA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-BUMRL9S;Initial Catalog=COVID_DATA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{15EE26F7-CF2D-4341-9CEE-8357CA12534E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tarea Flujo de datos\COVID_CR"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="17418"
+              name="COVID_CR"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\COVID_CR.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[country_region_code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[country_region_code]"
+                      length="5"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[country_region_code]"
+                      name="country_region_code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[country_region]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[country_region]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[country_region]"
+                      name="country_region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[sub_region_1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[sub_region_1]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[sub_region_1]"
+                      name="sub_region_1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[sub_region_2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[sub_region_2]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[sub_region_2]"
+                      name="sub_region_2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[metro_area]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[metro_area]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[metro_area]"
+                      name="metro_area"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[iso_3166_2_code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[iso_3166_2_code]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[iso_3166_2_code]"
+                      name="iso_3166_2_code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[census_fips_code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[census_fips_code]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[census_fips_code]"
+                      name="census_fips_code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[place_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[place_id]"
+                      length="500"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[place_id]"
+                      name="place_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[date]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      name="retail_and_recreation_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      name="grocery_and_pharmacy_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[parks_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[parks_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[parks_percent_change_from_baseline]"
+                      name="parks_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[transit_stations_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[transit_stations_percent_change_from_baseline]"
+                      name="transit_stations_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[workplaces_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[workplaces_percent_change_from_baseline]"
+                      name="workplaces_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[residential_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[residential_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[residential_percent_change_from_baseline]"
+                      name="residential_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[country_region_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="country_region_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[country_region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country_region" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[sub_region_1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sub_region_1" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[sub_region_2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sub_region_2" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[metro_area]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="metro_area" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[iso_3166_2_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="iso_3166_2_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[census_fips_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="census_fips_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[place_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="place_id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[date]"
+                      dataType="date"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="retail_and_recreation_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="grocery_and_pharmacy_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[parks_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="parks_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="transit_stations_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="workplaces_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].ExternalColumns[residential_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="residential_percent_change_from_baseline" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\COVID_HN"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="17418"
+              name="COVID_HN"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\COVID_HN.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 2]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[country_region_code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[country_region_code]"
+                      length="5"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[country_region_code]"
+                      name="country_region_code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[country_region]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[country_region]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[country_region]"
+                      name="country_region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[sub_region_1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[sub_region_1]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[sub_region_1]"
+                      name="sub_region_1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[sub_region_2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[sub_region_2]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[sub_region_2]"
+                      name="sub_region_2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[metro_area]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[metro_area]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[metro_area]"
+                      name="metro_area"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[iso_3166_2_code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[iso_3166_2_code]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[iso_3166_2_code]"
+                      name="iso_3166_2_code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[census_fips_code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[census_fips_code]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[census_fips_code]"
+                      name="census_fips_code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[place_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[place_id]"
+                      length="500"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[place_id]"
+                      name="place_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[date]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      name="retail_and_recreation_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      name="grocery_and_pharmacy_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[parks_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[parks_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[parks_percent_change_from_baseline]"
+                      name="parks_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[transit_stations_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[transit_stations_percent_change_from_baseline]"
+                      name="transit_stations_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[workplaces_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[workplaces_percent_change_from_baseline]"
+                      name="workplaces_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[residential_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[residential_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[residential_percent_change_from_baseline]"
+                      name="residential_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[country_region_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="country_region_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[country_region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country_region" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[sub_region_1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sub_region_1" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[sub_region_2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sub_region_2" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[metro_area]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="metro_area" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[iso_3166_2_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="iso_3166_2_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[census_fips_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="census_fips_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[place_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="place_id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[date]"
+                      dataType="date"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="retail_and_recreation_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="grocery_and_pharmacy_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[parks_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="parks_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="transit_stations_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="workplaces_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].ExternalColumns[residential_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="residential_percent_change_from_baseline" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\COVID_SV"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="17418"
+              name="COVID_SV"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\COVID_SV.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 3]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[country_region_code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[country_region_code]"
+                      length="5"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[country_region_code]"
+                      name="country_region_code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[country_region]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[country_region]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[country_region]"
+                      name="country_region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[sub_region_1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[sub_region_1]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[sub_region_1]"
+                      name="sub_region_1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[sub_region_2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[sub_region_2]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[sub_region_2]"
+                      name="sub_region_2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[metro_area]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[metro_area]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[metro_area]"
+                      name="metro_area"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[iso_3166_2_code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[iso_3166_2_code]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[iso_3166_2_code]"
+                      name="iso_3166_2_code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[census_fips_code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[census_fips_code]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[census_fips_code]"
+                      name="census_fips_code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[place_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[place_id]"
+                      length="500"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[place_id]"
+                      name="place_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[date]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      name="retail_and_recreation_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      name="grocery_and_pharmacy_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[parks_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[parks_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[parks_percent_change_from_baseline]"
+                      name="parks_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[transit_stations_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[transit_stations_percent_change_from_baseline]"
+                      name="transit_stations_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[workplaces_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[workplaces_percent_change_from_baseline]"
+                      name="workplaces_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[residential_percent_change_from_baseline]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[residential_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[residential_percent_change_from_baseline]"
+                      name="residential_percent_change_from_baseline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[country_region_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="country_region_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[country_region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country_region" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[sub_region_1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sub_region_1" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[sub_region_2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sub_region_2" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[metro_area]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="metro_area" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[iso_3166_2_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="iso_3166_2_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[census_fips_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="census_fips_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[place_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="place_id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[date]"
+                      dataType="date"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="retail_and_recreation_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="grocery_and_pharmacy_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[parks_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="parks_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="transit_stations_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="workplaces_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].ExternalColumns[residential_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="residential_percent_change_from_baseline" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Destino de OLE DB"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de OLE DB"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[Covid_Data_CostaRica]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-BUMRL9S.COVID_DATA]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-BUMRL9S.COVID_DATA]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[country_region_code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="country_region_code"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_region_code]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[country_region_code]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[country_region]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="country_region"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_region]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[country_region]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[sub_region_1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="sub_region_1"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[sub_region_1]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[sub_region_1]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[sub_region_2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="sub_region_2"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[sub_region_2]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[sub_region_2]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[metro_area]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="metro_area"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[metro_area]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[metro_area]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[iso_3166_2_code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="iso_3166_2_code"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[iso_3166_2_code]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[iso_3166_2_code]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[census_fips_code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="census_fips_code"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[census_fips_code]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[census_fips_code]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[place_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="place_id"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[place_id]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[place_id]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[date]"
+                      cachedDataType="date"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[date]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[date]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="retail_and_recreation_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[retail_and_recreation_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="grocery_and_pharmacy_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[grocery_and_pharmacy_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[parks_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="parks_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[parks_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[parks_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[transit_stations_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="transit_stations_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[transit_stations_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[workplaces_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="workplaces_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[workplaces_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[residential_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="residential_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[residential_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano].Columns[residential_percent_change_from_baseline]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_region_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="country_region_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country_region" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[sub_region_1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sub_region_1" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[sub_region_2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sub_region_2" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[metro_area]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="metro_area" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[iso_3166_2_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="iso_3166_2_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[census_fips_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="census_fips_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[place_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="place_id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[date]"
+                      dataType="dbTimeStamp"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="retail_and_recreation_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="grocery_and_pharmacy_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[parks_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="parks_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="transit_stations_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="workplaces_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[residential_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="residential_percent_change_from_baseline" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Destino de OLE DB 1"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de OLE DB 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[Covid_Data_Honduras]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-BUMRL9S.COVID_DATA]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-BUMRL9S.COVID_DATA]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[country_region_code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="country_region_code"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_region_code]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[country_region_code]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[country_region]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="country_region"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_region]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[country_region]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[sub_region_1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="sub_region_1"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[sub_region_1]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[sub_region_1]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[sub_region_2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="sub_region_2"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[sub_region_2]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[sub_region_2]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[metro_area]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="metro_area"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[metro_area]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[metro_area]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[iso_3166_2_code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="iso_3166_2_code"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[iso_3166_2_code]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[iso_3166_2_code]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[census_fips_code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="census_fips_code"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[census_fips_code]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[census_fips_code]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[place_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="place_id"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[place_id]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[place_id]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[date]"
+                      cachedDataType="date"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[date]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[date]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="retail_and_recreation_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[retail_and_recreation_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="grocery_and_pharmacy_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[grocery_and_pharmacy_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[parks_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="parks_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[parks_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[parks_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[transit_stations_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="transit_stations_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[transit_stations_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[workplaces_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="workplaces_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[workplaces_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[residential_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="residential_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[residential_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano].Columns[residential_percent_change_from_baseline]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_region_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="country_region_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country_region" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[sub_region_1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sub_region_1" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[sub_region_2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sub_region_2" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[metro_area]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="metro_area" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[iso_3166_2_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="iso_3166_2_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[census_fips_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="census_fips_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[place_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="place_id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[date]"
+                      dataType="dbTimeStamp"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="retail_and_recreation_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="grocery_and_pharmacy_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[parks_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="parks_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="transit_stations_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="workplaces_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[residential_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="residential_percent_change_from_baseline" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Destino de OLE DB 2"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de OLE DB 2"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[Covid_Data_ElSalvador]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-BUMRL9S.COVID_DATA]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-BUMRL9S.COVID_DATA]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[country_region_code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="country_region_code"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_region_code]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[country_region_code]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[country_region]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="country_region"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_region]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[country_region]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[sub_region_1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="sub_region_1"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[sub_region_1]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[sub_region_1]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[sub_region_2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="sub_region_2"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[sub_region_2]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[sub_region_2]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[metro_area]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="metro_area"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[metro_area]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[metro_area]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[iso_3166_2_code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="iso_3166_2_code"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[iso_3166_2_code]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[iso_3166_2_code]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[census_fips_code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="census_fips_code"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[census_fips_code]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[census_fips_code]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[place_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="place_id"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[place_id]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[place_id]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[date]"
+                      cachedDataType="date"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[date]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[date]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[retail_and_recreation_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="retail_and_recreation_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[retail_and_recreation_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="grocery_and_pharmacy_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[grocery_and_pharmacy_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[parks_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="parks_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[parks_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[parks_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[transit_stations_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="transit_stations_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[transit_stations_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[workplaces_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="workplaces_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[workplaces_percent_change_from_baseline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].Columns[residential_percent_change_from_baseline]"
+                      cachedDataType="i4"
+                      cachedName="residential_percent_change_from_baseline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[residential_percent_change_from_baseline]"
+                      lineageId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano].Columns[residential_percent_change_from_baseline]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_region_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="country_region_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[country_region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country_region" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[sub_region_1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sub_region_1" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[sub_region_2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sub_region_2" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[metro_area]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="metro_area" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[iso_3166_2_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="iso_3166_2_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[census_fips_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="census_fips_code" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[place_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="place_id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[date]"
+                      dataType="dbTimeStamp"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[retail_and_recreation_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="retail_and_recreation_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[grocery_and_pharmacy_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="grocery_and_pharmacy_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[parks_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="parks_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[transit_stations_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="transit_stations_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[workplaces_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="workplaces_percent_change_from_baseline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB].ExternalColumns[residential_percent_change_from_baseline]"
+                      dataType="i4"
+                      name="residential_percent_change_from_baseline" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
+              endId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Tarea Flujo de datos\COVID_CR.Outputs[Salida de origen de archivo plano]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano1]"
+              endId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Tarea Flujo de datos\COVID_HN.Outputs[Salida de origen de archivo plano]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano2]"
+              endId="Package\Tarea Flujo de datos\Destino de OLE DB 2.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Tarea Flujo de datos\COVID_SV.Outputs[Salida de origen de archivo plano]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Tarea Flujo de datos"
+          TopLeft="189,50" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Tarea Flujo de datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="129,42"
+          Id="Package\Tarea Flujo de datos\COVID_CR"
+          TopLeft="119,33" />
+        <NodeLayout
+          Size="131,42"
+          Id="Package\Tarea Flujo de datos\COVID_HN"
+          TopLeft="317,36" />
+        <NodeLayout
+          Size="129,42"
+          Id="Package\Tarea Flujo de datos\COVID_SV"
+          TopLeft="529,38" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Tarea Flujo de datos\Destino de OLE DB"
+          TopLeft="94,145" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Tarea Flujo de datos\Destino de OLE DB 1"
+          TopLeft="303,144" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Tarea Flujo de datos\Destino de OLE DB 2"
+          TopLeft="510,141" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
+          TopLeft="180.75,75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,70"
+              Start="0,0"
+              End="0,62.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano1]"
+          TopLeft="382.5,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9,66"
+              Start="0,0"
+              End="9,58.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29"
+                    Point2="0,33"
+                    Point3="4,33" />
+                  <mssgle:LineSegment
+                    End="5,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5,33"
+                    Point2="9,33"
+                    Point3="9,37" />
+                  <mssgle:LineSegment
+                    End="9,58.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano2]"
+          TopLeft="596,80">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Destino de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Destino de OLE DB 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Destino de OLE DB 2">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

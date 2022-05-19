@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Desafio_2_Northwind_CV152055</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>BsqqwP0rrxW6CKlwcTk8cJTLn7E=13/5/2022 20:47:2113/5/2022 20:47:21</TimeStamp>
+        <ID>
+          <String>Northwind</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>5IKUs9Rlc7z7d79Yeb6xjsCIdmY=17/5/2022 20:44:2417/5/2022 20:44:24</TimeStamp>
+        <ID>
+          <String>Northwind</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>iouc9Pepi2Gs+YNiLWz0AwH+VfE=17/5/2022 20:49:2217/5/2022 20:46:26</TimeStamp>
+        <ID>
+          <String>Employees</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1ion2hIVVq/o4ckS6v5zfDeH/Ek=17/5/2022 20:50:0217/5/2022 20:46:26</TimeStamp>
+        <ID>
+          <String>Customers</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>qzNLIx2FAgdlt9NH9iDiNxW+6Qc=17/5/2022 20:46:2717/5/2022 20:46:26</TimeStamp>
+        <ID>
+          <String>Orders</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZiVqUbhpZYatd2dfgrTdgvZ4VcE=17/5/2022 20:48:5917/5/2022 20:46:26</TimeStamp>
+        <ID>
+          <String>Products</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>IffVrxjkGePCLOydqi8s8/QuIBo=17/5/2022 20:50:3417/5/2022 20:46:26</TimeStamp>
+        <ID>
+          <String>Suppliers</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9N9Tuffjtnqi2vf2UF8K6q9oxcc=17/5/2022 20:46:2717/5/2022 20:46:26</TimeStamp>
+        <ID>
+          <String>Categories</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>jraCJCJ0n11vXsxvsBZxwfa1JKk=17/5/2022 20:50:3417/5/2022 20:46:26P2udXOtv77KBFFkwRdRt8IegFgY=17/5/2022 20:46:2717/5/2022 20:46:26</TimeStamp>
+        <ID>
+          <String>Northwind</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>x3Nx5oyIbTzKrtrMSZm7AbplkKM=13/5/2022 20:37:0313/5/2022 20:37:02</TimeStamp>
+      <ID>
+        <String>Desafio_2_Northwind_CV152055</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-05-18T02:50:51.023333Z</LastDeployed>
+</DeploymentSnapshot>

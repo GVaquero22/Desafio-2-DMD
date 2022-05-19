@@ -1,0 +1,127 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3da0ac78-084f-4809-8ff1-4b406a51a90c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>COVID DATA</ID>
+  <Name>COVID DATA</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>COVID DATA</DataSourceID>
+  <Schema>
+    <xs:schema id="COVID_x0020_DATA" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="COVID_x0020_DATA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6a35f0b7-2afe-40d8-804b-93c1ade88dd0">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Covid_Data_CostaRica" msprop:design-time-name="e4a7be63-b4dc-44be-99d9-2ad78e00c92e" msprop:DbTableName="Covid_Data_CostaRica" msprop:FriendlyName="Covid_Data_CostaRica" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="country_region_code" msprop:design-time-name="4900e850-1ae8-4f8f-9cf8-2cf61ecd1aaf" msprop:DbColumnName="country_region_code" msprop:FriendlyName="country_region_code" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="country_region" msprop:design-time-name="6a13be15-7e11-4caa-998c-57b6a7af1696" msprop:DbColumnName="country_region" msprop:FriendlyName="country_region" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="sub_region_1" msprop:design-time-name="c241aea8-dbc7-4ec5-b339-263814ad5430" msprop:DbColumnName="sub_region_1" msprop:FriendlyName="sub_region_1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="sub_region_2" msprop:design-time-name="2e22c313-53b6-4ffe-b139-ed5a63908366" msprop:DbColumnName="sub_region_2" msprop:FriendlyName="sub_region_2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="metro_area" msprop:design-time-name="659a705c-39b2-408f-9869-2110ff801550" msprop:DbColumnName="metro_area" msprop:FriendlyName="metro_area" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="iso_3166_2_code" msprop:design-time-name="35306a81-54f6-4b8a-8aab-f62add62a8ed" msprop:DbColumnName="iso_3166_2_code" msprop:FriendlyName="iso_3166_2_code" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="census_fips_code" msprop:design-time-name="816b84d5-ce9b-4573-870b-79aa3466e9b7" msprop:DbColumnName="census_fips_code" msprop:FriendlyName="census_fips_code" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="place_id" msprop:design-time-name="f1d68492-a770-4657-8018-f31d6bb57db5" msprop:DbColumnName="place_id" msprop:FriendlyName="place_id" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="date" msprop:design-time-name="3593cca9-3d6e-4293-991b-07961845414e" msprop:DbColumnName="date" msprop:FriendlyName="date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="retail_and_recreation_percent_change_from_baseline" msprop:design-time-name="e9c22f4f-df0b-44cd-9f0b-f5d1d8693418" msprop:DbColumnName="retail_and_recreation_percent_change_from_baseline" msprop:FriendlyName="retail_and_recreation_percent_change_from_baseline" type="xs:int" minOccurs="0" />
+                  <xs:element name="grocery_and_pharmacy_percent_change_from_baseline" msprop:design-time-name="58a8c3ae-1cf5-41b4-ae6d-a80f65f207ed" msprop:DbColumnName="grocery_and_pharmacy_percent_change_from_baseline" msprop:FriendlyName="grocery_and_pharmacy_percent_change_from_baseline" type="xs:int" minOccurs="0" />
+                  <xs:element name="parks_percent_change_from_baseline" msprop:design-time-name="c81338d2-59bf-45a0-9344-ff7325fcac04" msprop:DbColumnName="parks_percent_change_from_baseline" msprop:FriendlyName="parks_percent_change_from_baseline" type="xs:int" minOccurs="0" />
+                  <xs:element name="transit_stations_percent_change_from_baseline" msprop:design-time-name="18e93213-6828-4287-a8bb-5cb2dde70e3b" msprop:DbColumnName="transit_stations_percent_change_from_baseline" msprop:FriendlyName="transit_stations_percent_change_from_baseline" type="xs:int" minOccurs="0" />
+                  <xs:element name="workplaces_percent_change_from_baseline" msprop:design-time-name="f594be0c-fabd-42ff-b558-a6fb22f68a57" msprop:DbColumnName="workplaces_percent_change_from_baseline" msprop:FriendlyName="workplaces_percent_change_from_baseline" type="xs:int" minOccurs="0" />
+                  <xs:element name="residential_percent_change_from_baseline" msprop:design-time-name="263528a6-a0cd-424e-8cf8-159d8f2621a2" msprop:DbColumnName="residential_percent_change_from_baseline" msprop:FriendlyName="residential_percent_change_from_baseline" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <COVID_x0020_DATA xmlns="" />
+  </Schema>
+</DataSourceView>

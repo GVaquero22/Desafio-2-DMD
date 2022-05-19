@@ -1,0 +1,300 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e151f6d4-6b02-4bce-ab8d-2f19c3f0ddaf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Covid Data Costa Rica</ID>
+  <Name>Covid Data Costa Rica</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="33" scrolltop="1084" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8229" y="12832" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Covid_Data_CostaRica" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="8255" height="8466" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003f20000012210000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Covid_Data_CostaRica" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>33</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>1084</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3e83e8b4-2654-45d5-851c-30119fb87fa1">
+    <DataSourceViewID>COVID DATA</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="9682dc4d-da8b-4251-adbc-a3a3ea0dcacf">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="1c4b7342-a15d-4c91-b5b5-f1eeea0e7767">
+      <ID>Country Region Code</ID>
+      <Name>Country Region Code</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="32e6b5ec-8115-491b-b188-90388450ead4">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ee817df-17c2-4173-8624-eb6edbeab0a5">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>country_region_code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="eddb5f25-0647-4289-8ce9-4f0ba3b34e4d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="34a64d28-fbdb-4358-b76f-a6ae977ae92c">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>country_region</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="bfd0c1a4-2c7f-4aff-91ab-3d35191c4afc">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8eff615b-da61-400b-9937-95d36ed9639a">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>date</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="9f9cca79-04ba-41c8-80f3-4848e7f9b2dc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="26db307a-b845-4ed2-8ad5-2f3ad0a473d6">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>retail_and_recreation_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5f9652ae-e1c8-4f8e-9074-4d324af1cc80">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bbc0d0e9-a9fb-4777-b97c-0246e18c9064">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>grocery_and_pharmacy_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="945319c0-eb63-447b-9e83-12b26927d535">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe52d932-3ead-4bd6-8b25-d0a891d9c033">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>parks_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="80c12ae4-0e14-4f15-be2d-c57bdc4d2385">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b3c6d23-0dfb-40d0-b81b-97bd8eb7dc21">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>transit_stations_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="90a05bfd-f94f-44ad-bb80-b9b73e21372f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b9fb7df-8cc9-44af-83d6-d56a141eb1b1">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>workplaces_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d686060c-0760-4c8d-b208-9a8bc5c157ae">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2661421a-6f98-4324-9340-963e14a99c6d">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>residential_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4fc565fb-0936-425e-837f-b5ad8cd4e259">
+        <DataType>WChar</DataType>
+        <DataSize>5</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1a14fb3d-2dde-4bbb-aac5-ff1eb06c6de8">
+          <TableID>dbo_Covid_Data_CostaRica</TableID>
+          <ColumnID>country_region_code</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4392fa02-f40d-4441-954f-dc7ea73523f4">
+          <AttributeID>Date</AttributeID>
+          <Name>Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8f6c0ea2-8594-49b6-9c1d-16405001c419">
+          <AttributeID>Retail And Recreation Percent Change From Baseline</AttributeID>
+          <Name>Retail And Recreation Percent Change From Baseline</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="18af2457-aafb-4d6d-8465-abc32c643516">
+          <AttributeID>Grocery And Pharmacy Percent Change From Baseline</AttributeID>
+          <Name>Grocery And Pharmacy Percent Change From Baseline</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="31e8ef9c-f493-4a04-9ca7-ef5a7c98a259">
+          <AttributeID>Parks Percent Change From Baseline</AttributeID>
+          <Name>Parks Percent Change From Baseline</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9041af15-3f70-4681-acb2-b7105f988eec">
+          <AttributeID>Transit Stations Percent Change From Baseline</AttributeID>
+          <Name>Transit Stations Percent Change From Baseline</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f943c398-7582-4513-a5e5-bd1bf53a80b1">
+          <AttributeID>Workplaces Percent Change From Baseline</AttributeID>
+          <Name>Workplaces Percent Change From Baseline</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e469e0ad-bfba-4417-b679-c00b0b8b39fb">
+          <AttributeID>Residential Percent Change From Baseline</AttributeID>
+          <Name>Residential Percent Change From Baseline</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c2490174-cc9f-43dc-a1a4-2daf920969d5">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f1f8501a-8f2f-40a2-b45d-93719567e523">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c2ff114c-a701-4b2a-aeb3-26ebb53d2edc">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8d57c7cd-4916-4563-af27-b6caf8d8755c">
+      <ID>Retail And Recreation Percent Change From Baseline</ID>
+      <Name>Retail And Recreation Percent Change From Baseline</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="85d57952-315a-4eda-8f30-6d4d73aeb06c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4c7e96de-0537-4658-940b-e65ded54a92e">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>retail_and_recreation_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8d0a143f-f0e5-4564-87d8-eaae367e858b">
+      <ID>Grocery And Pharmacy Percent Change From Baseline</ID>
+      <Name>Grocery And Pharmacy Percent Change From Baseline</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="981ee39b-d077-4454-b4c5-2b2581f96c03">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca98f7d7-32d7-42e1-9785-f3327a4ad26b">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>grocery_and_pharmacy_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aa91252f-ec44-41f5-9ba5-1a11f53a0999">
+      <ID>Parks Percent Change From Baseline</ID>
+      <Name>Parks Percent Change From Baseline</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9633cf47-6bdf-4712-8540-caad1fcb9f83">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b165497a-31ab-4e65-abba-7b97efec2087">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>parks_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f6faa87a-e264-4694-9ece-ee7a91efaaf6">
+      <ID>Transit Stations Percent Change From Baseline</ID>
+      <Name>Transit Stations Percent Change From Baseline</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9895b6fb-41b0-4906-ad02-5091072d40c0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="634667ea-a3b3-402c-84a0-6703cdafbad9">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>transit_stations_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7274d098-5c02-4750-b1a9-76755fad1c5d">
+      <ID>Workplaces Percent Change From Baseline</ID>
+      <Name>Workplaces Percent Change From Baseline</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a8c4ac52-d6d2-4179-81a6-02a776943134">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c3535ff1-434e-4076-9c3e-3247029237b0">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>workplaces_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="de9bd36d-0959-4799-ab2e-664d2ac42e8f">
+      <ID>Residential Percent Change From Baseline</ID>
+      <Name>Residential Percent Change From Baseline</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cd2e4ac9-817d-4e2d-ad5b-6d74b9359928">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="68330aef-c030-4285-b786-8add5b4e4383">
+            <TableID>dbo_Covid_Data_CostaRica</TableID>
+            <ColumnID>residential_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
